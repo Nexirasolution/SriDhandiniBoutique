@@ -25,7 +25,7 @@ async function main() {
   const Settings = mongoose.models.Settings || mongoose.model('Settings', SettingsSchema);
 
   // 1. Admin account
-  const email = (process.env.ADMIN_EMAIL || 'admin@lineacloth.com').toLowerCase();
+  const email = (process.env.ADMIN_EMAIL || 'sridhandhniboutique@gmail.com').toLowerCase();
   const existingAdmin = await Admin.findOne({ email });
   if (!existingAdmin) {
     const passwordHash = await bcrypt.hash(process.env.ADMIN_PASSWORD || 'ChangeMe123!', 10);
@@ -61,14 +61,16 @@ async function main() {
   if (!existingSettings) {
     await Settings.create({
       key: 'global',
-      storeName: 'Linea Cloth',
-      whatsapp: '919345192270',
-      instagram: 'https://www.instagram.com/linea_cloth?stkn=MTl2NDltMjlkeXhlMQ==',
-      address: 'Rasipuram (TK), Namakkal (DT) 637 408',
+      storeName: 'Sri Dhandhni Boutique',
+      email: 'sridhandhniboutique@gmail.com',
+      phone: '9003410378',
+      whatsapp: '919003410378',
+      instagram: 'https://www.instagram.com/p/DOlGxDZkSVA/?srtk=bm5kYXp6N3UwY29n',
+      address: '28, Samaspiran Street, Opp Kalla Street, Trichy - 620008',
       shippingFee: 49,
       freeShippingAbove: 999,
-      seoTitle: 'Linea Cloth',
-      seoDescription: 'Shop trendy women\'s clothing from Linea Cloth, Rasipuram.'
+      seoTitle: 'Sri Dhandhni Boutique',
+      seoDescription: 'Shop trendy women\'s clothing from Sri Dhandhni Boutique, Trichy.'
     });
     console.log('Created default store settings.');
   }

@@ -18,18 +18,18 @@ export async function generateMetadata() {
   } catch {
     settings = null;
   }
-  const title = settings?.seoTitle || 'Linea Cloth - Women Kurtis, Nighties & More';
+  const title = settings?.seoTitle || 'Sri Dhandhni Boutique - Women Kurtis, Nighties & More';
   const description =
     settings?.seoDescription ||
-    'Shop authentic women kurtis, nighties, innerwear and trending collections online from Linea Cloth.';
+    'Shop authentic women kurtis, nighties, innerwear and trending collections online from Sri Dhandhni Boutique.';
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ssrkcollections.com';
   return {
     title: { default: title, template: '%s | SSRK Trending Collections' },
     description,
     metadataBase: new URL(siteUrl),
-    keywords: ['women kurtis online', 'nighties online', 'innerwear online', 'Linea Cloth', 'women fashion'],
-    openGraph: { title, description, siteName: 'Linea Cloth', type: 'website' },
-    icons: { icon: '/favicon.ico' },
+    keywords: ['women kurtis online', 'nighties online', 'innerwear online', 'Sri Dhandhni Boutique', 'women fashion'],
+    openGraph: { title, description, siteName: 'Sri Dhandhni Boutique', type: 'website' },
+    icons: { icon: '/favicon.png' },
   };
 }
 

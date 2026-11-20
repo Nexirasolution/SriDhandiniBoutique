@@ -199,7 +199,7 @@ export default function Navbar() {
             {/* Center: logo */}
             <Link href="/" className="flex items-center justify-self-center">
               <div className="relative w-28 h-28 -my-2 sm:my-0 sm:w-32 sm:h-32">
-                <Image src="/logo.png" alt="Tirupur Clothing Hub" fill sizes="(min-width: 640px) 128px, 112px" className="object-contain" priority />
+                <Image src="/logo.png" alt="Sri Dhandhni Boutique" fill sizes="(min-width: 640px) 128px, 112px" className="object-contain" priority />
               </div>
             </Link>
 
@@ -283,7 +283,7 @@ export default function Navbar() {
             style={{ borderBottom: `1px solid ${LINE}` }}
           >
             <div className="relative w-16 h-16">
-              <Image src="/logo.png" alt="Tirupur Clothing Hub" fill sizes="64px" className="object-contain" />
+              <Image src="/logo.png" alt="Sri Dhandhni Boutique" fill sizes="64px" className="object-contain" />
             </div>
             <button
               className="p-2 -mr-2"

@@ -21,9 +21,9 @@ async function getCategories() {
 }
 
 export default async function Footer() {
-  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP || '919345192270';
+  const whatsapp = process.env.NEXT_PUBLIC_WHATSAPP || '919003410378';
   const instagram = process.env.NEXT_PUBLIC_INSTAGRAM ||
-    'https://www.instagram.com/linea_cloth?stkn=MTl2NDltMjlkeXhlMQ==';
+    'https://www.instagram.com/p/DOlGxDZkSVA/?srtk=bm5kYXp6N3UwY29n';
   const categories = await getCategories();
 
   const quickLinks = [
@@ -43,7 +43,7 @@ export default async function Footer() {
         {/* Brand column */}
         <div className="sm:col-span-4">
           <h3 className={`${display.className} text-2xl leading-tight`} style={{ color: INK, fontWeight: 400 }}>
-            Linea Cloth
+            Sri Dhandhni Boutique
           </h3>
           <p className="text-[11px] font-medium tracking-wide mb-4" style={{ color: INK }}>
             Wholesale &amp; Retail
@@ -51,8 +51,14 @@ export default async function Footer() {
 
           <p className="flex items-start gap-1.5 text-xs leading-relaxed" style={{ color: INK_SOFT }}>
             <MapPin size={13} className="shrink-0 mt-0.5" style={{ color: GOLD }} />
-            Rasipuram (TK),<br />
-            Namakkal (DT) 637 408
+            28, Samaspiran Street,<br />
+            Opp Kalla Street,<br />
+            Trichy - 620008
+          </p>
+
+          <p className="mt-3 text-xs leading-relaxed" style={{ color: INK_SOFT }}>
+            <a href="tel:+919003410378" className="hover:opacity-75">9003410378</a><br />
+            <a href="mailto:sridhandhniboutique@gmail.com" className="hover:opacity-75">sridhandhniboutique@gmail.com</a>
           </p>
 
           <p className="inline-flex items-center gap-1.5 mt-4 text-[11px] font-normal tracking-wide" style={{ color: INK_SOFT }}>
@@ -69,11 +75,11 @@ export default async function Footer() {
       <div style={{ borderTop: `1px solid ${LINE}` }}>
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-[11px]" style={{ color: INK_SOFT }}>
-            © {new Date().getFullYear()} Linea Cloth. All rights reserved.
+            © {new Date().getFullYear()} Sri Dhandhni Boutique. All rights reserved.
           </p>
 
-          
-           <a href="https://www.nexirasolution.in"
+          <a
+            href="https://www.nexirasolution.in"
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-1.5 text-[11px] transition-opacity hover:opacity-75"
