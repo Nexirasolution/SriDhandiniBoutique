@@ -65,7 +65,7 @@ export default async function HomePage() {
           className="inline-block text-[10px] sm:text-[11px] font-semibold uppercase tracking-[4px]"
           style={{ color: INK_SOFT, fontFamily: FONT_SANS }}
         >
-          The Tirupur Clothing Hub Edit
+          The Sri Dhandhni Boutique Edit
         </span>
 
         <h1
