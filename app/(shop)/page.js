@@ -103,7 +103,7 @@ export default async function HomePage() {
       <BannerCarousel banners={JSON.parse(JSON.stringify(banners))} />
 
       {/* Shop by Category */}
-      {/* {plainCategories?.length > 0 && (
+      {plainCategories?.length > 0 && (
         <section className="max-w-6xl mx-auto px-4 pt-14 pb-6">
           <h1
             className="text-xl sm:text-2xl font-bold tracking-[3px] uppercase mb-6 text-center"
@@ -117,9 +117,9 @@ export default async function HomePage() {
                 key={c._id}
                 href={`/category/${c.slug}`}
                 className="group flex flex-col items-center text-center"
-              > */}
+              >
                 {/* Circular image */}
-                {/* <div
+                <div
                   className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-full overflow-hidden bg-neutral-50 transition-transform duration-300 group-hover:scale-105"
                   style={{ border: `1px solid ${GOLD}` }}
                 >
@@ -132,10 +132,10 @@ export default async function HomePage() {
                   ) : (
                     <div className="w-full h-full" style={{ background: GOLD_WASH }} />
                   )}
-                </div> */}
+                </div>
 
                 {/* Label */}
-                {/* <span
+                <span
                   className="mt-2 text-[10.5px] sm:text-[11px] font-bold tracking-wide leading-tight line-clamp-2 max-w-[80px]"
                   style={{ color: INK, fontFamily: FONT_SANS }}
                 >
@@ -145,7 +145,7 @@ export default async function HomePage() {
             ))}
           </div>
         </section>
-      )} */}
+      )}
 
       {/* New Launches — centered heading, up to 6 latest products, CTA.
           Hidden entirely when there are no products. */}
