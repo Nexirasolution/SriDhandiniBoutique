@@ -198,8 +198,8 @@ export default function Navbar() {
 
             {/* Center: logo */}
             <Link href="/" className="flex items-center justify-self-center">
-              <div className="relative w-28 h-28 -my-2 sm:my-0 sm:w-32 sm:h-32">
-                <Image src="/logo.png" alt="Sri Dhandhni Boutique" fill sizes="(min-width: 640px) 128px, 112px" className="object-contain" priority />
+              <div className="relative w-24 h-16 my-2 sm:w-28 sm:h-20 sm:my-2">
+                <Image src="/logo.png" alt="Sri Dhandhni Boutique" fill sizes="(min-width: 640px) 112px, 96px" className="object-contain object-center" priority />
               </div>
             </Link>
 
